@@ -6,12 +6,21 @@ import App from './App.js'
 class Main extends React.Component {
     constructor(props, context) {
         super(props);
+        const { location } = props
+        let route = location.pathname
+        this.state = {
+            route: route
+        }
         this.titleObj = {}
     }
 
     componentWillReceiveProps(props) {
         const { location } = props
         window.document.title = this.titleObj[location.pathname]
+    }
+
+    componentDidMount() {
+        window.document.title = this.titleObj[this.state.route]
     }
 
     render () {
@@ -36,6 +45,8 @@ class Main extends React.Component {
                 routes.push(route)
             }
         })
+
+        // window.document.title = this.titleObj[this.state.route]
 
         return (
             <Switch>

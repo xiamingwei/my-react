@@ -1,0 +1,19 @@
+$white: white;
+$headerBgColor: rgb(2, 20, 81);
+
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: $headerBgColor;
+    height: 50px;
+    color: $white;
+
+    span {
+        margin-right: 50px;
+        cursor: pointer;
+    }
+}
+
+        

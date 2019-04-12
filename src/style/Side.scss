@@ -1,0 +1,15 @@
+.index-menu {
+    height: calc(100vh - 80px);
+}
+
+.collapsed-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(2, 20, 81);
+    height: 30px;
+    .collapsed-button {
+        color: white;
+        cursor: pointer;
+    }
+}

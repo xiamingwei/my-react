@@ -1,0 +1,8 @@
+$highLight: red;
+.product-list {
+    display: flex;
+
+    .highlight-product {
+        color: $highLight;
+    }
+}

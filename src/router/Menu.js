@@ -23,14 +23,14 @@ const pages = {
         icon: 'desktop',
         component: Detail
     },{
-        name: 'Heros',
+        name: 'Redux',
         icon: 'inbox',
         children: [{
-            name: 'Riven',
+            name: 'ReduxA',
             key: '/riven',
             component: Riven
         }, {
-            name: 'Zed',
+            name: 'ReduxB',
             key: '/zed',
             component: Zed
         }]
